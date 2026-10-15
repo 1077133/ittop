@@ -2,15 +2,18 @@ import math
 
 acc = 0.0
 while 1:
-    n = input(f"[ acc == {acc} ] [ Введите число или действие: ]\n")
+    n = input(f"[ acc == {acc} ] [ введите число или действие: ]\n")
 
     if n == "exit":
         break
     elif n == "=":
         print(f"{acc}")
+    elif n == "C":
+        acc = 0.0
+        print("[ сброшено ]")
 
     elif n in ("+", "-", "*", "/", "**"):
-        m = float(input(f"[ Введите число: ]\n"))
+        m = float(input(f"[ введите число: ]\n"))
         if n == "+":
                 acc = acc + m
         elif n == "-":
@@ -21,7 +24,7 @@ while 1:
                 acc = acc ** m
         elif n == "/":
             if m == 0:
-                print("[ На ноль делить нельзя ]")
+                print("[ на ноль делить нельзя ]")
                 break
             else:
                 acc = acc / m
@@ -35,6 +38,6 @@ while 1:
         try:
             acc = float(n)
         except:
-            print("[ Ошибка ]")
+            print("[ ошибка ]")
 
 
