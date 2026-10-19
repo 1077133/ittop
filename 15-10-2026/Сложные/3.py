@@ -13,5 +13,6 @@ def decompress(groups):
 
 numbers = [5, 5, 5, 2, 2, 5, 8, 8]
 
+# проверка
 print(compress(numbers)) # [[5, 3], [2, 2], [5, 1], [8, 2]]
 print(decompress(compress(numbers))) # [5, 5, 5, 2, 2, 5, 8, 8]

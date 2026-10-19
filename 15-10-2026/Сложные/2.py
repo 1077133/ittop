@@ -10,7 +10,7 @@ def rotate(numbers, k):
 
     return numbers[-k:] + numbers[:-k]
 
-# проверки
+# проверка
 print(rotate([10, 20, 30, 40, 50], 2)) # [40, 50, 10, 20, 30]
 print(rotate([10, 20, 30, 40, 50], -1)) # [20, 30, 40, 50, 10]
 print(rotate([1, 2, 3], 8)) # [2, 3, 1]

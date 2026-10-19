@@ -1,6 +1,5 @@
 def window_sums(numbers, k):
-    if k <= 0 or k > len(numbers):
-        return []
+    if k <= 0 or k > len(numbers): return []
 
     sums = [sum(numbers[:k])]
     for i in range(len(numbers) - k):
